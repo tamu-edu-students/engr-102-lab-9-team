@@ -24,7 +24,7 @@ Word Arithmetic: This is a long-division problem in which letters are substitute
          ----          0123456789
           USA
 ```
-**You are given Python starter code for this activity.** In this file you are given a string representing a puzzle and a function to print the puzzle as a long division problem (as shown above). The example puzzle string is hardcoded for now, but will be taken in as a user input later. For the puzzle shown above, the puzzle string is:
+**[You are given Python starter code for this activity.](word_puzzle.py)** In this file you are given a string representing a puzzle and a function to print the puzzle as a long division problem (as shown above). The example puzzle string is hardcoded for now, but will be taken in as a user input later. For the puzzle shown above, the puzzle string is:
 ```
 RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA
 ```
