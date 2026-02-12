@@ -6,7 +6,30 @@ There is only one deliverable for this team assignment. Please submit the follow
 1. [Word Puzzle](#word-puzzle)
 
 ## Word Puzzle
-The
+This activity will help you practice writing functions while checking a solution to a word puzzle. 
+
+Word Arithmetic: This is a long-division problem in which letters are substituted for numbers.
+
+```
+          RUE        
+      _______        Dividend = Quotient * Divisor + Remainder
+ EAR | RUMORS        RUMORS   = RUE      * EAR     + USA
+       UEII  
+       ------        To solve the problem, determine the number value
+        UKTR         of each letter. When the letters used in the puzzle
+         EAR         are arranged in order from 0 to 9, they will spell
+         ----        out a word or words (no spaces).
+         KEOS
+         KAIK          ----------
+         ----          0123456789
+          USA
+```
+**You are given Python starter code for this activity.** In this file you are given a string representing a puzzle and a function to print the puzzle as a long division problem (as shown above). The example puzzle string is hardcoded for now, but will be taken in as a user input later. For the puzzle shown above, the puzzle string is:
+```
+RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA
+```
+Notice that in addition to letters, the puzzle string contains spaces, commas, and the vertical line character `|`.
+
 
 ## Frequently Asked Questions
 1. **Do I have to actually solve the word-math puzzles?** No! Unless you want to for fun, of course! The code you are writing will check a guess from the user, it won't solve the puzzles.
