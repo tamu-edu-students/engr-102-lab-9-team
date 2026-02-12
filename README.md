@@ -111,8 +111,8 @@ Good job!
 
 2. **How do I split a string of <stuff> into a list again?** Remember what you did in [LAB: Topic 7 (individual)](https://github.com/tamu-edu-students/engr-102-lab-7-individual)? That's right, you used `mystr.split()`. If you don't put anything inside the `()`, it will default split on the spaces. But how do you split on the commas? You can specify which character to split on! For example:
 ```python
-mystr = 'A,B,C,D,E'
-mylist = mystr.split(',')
+mystr = "A,B,C,D,E"
+mylist = mystr.split(",")
 ```
 will produce the list `['A', 'B', 'C', 'D', 'E']`.
 
