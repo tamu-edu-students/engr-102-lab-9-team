@@ -30,6 +30,81 @@ RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA
 ```
 Notice that in addition to letters, the puzzle string contains spaces, commas, and the vertical line character `|`.
 
+Create a program named `word_puzzle.py` that allows the user to check an answer for a given word arithmetic puzzle via the following steps:
+1. Create a function named `get_valid_letters` that takes in as an argument one string representing a puzzle and returns one string of ten (10) unique letters found in the puzzle. For the example puzzle above, your function should return the string `RUEAMOSIKT`.
+
+2. Create a function named `is_valid_guess` that takes in as arguments two strings and returns a Boolean value. The first string passed to the function is the string of valid letters from step 1; the second string is a guess from the user. The function should return `True` only if the user's guess string contains **exactly** 10 unique letters from the valid letters string. This function does NOT check if the user’s guess is the correct solution to the puzzle. For example, if the user’s guess is `TAKEOURSIM` or `IMAKETOURS`, the function returns `True`; if the user’s guess is `IMAKEIMAKE`, `TAKEOUR`, `TAKEOURSIMM`, or `TAKEOURSBD`, the function returns `False`.
+
+3. Create a function named `check_user_guess` that takes in as arguments four integers representing the dividend, quotient, divisor, and remainder (in that order) and returns a Boolean value. The function should return `True` only if the following equation holds:
+```
+Dividend = Quotient * Divisor + Remainder
+```
+Otherwise, the function should return `False`.
+
+4. Create a function named `make_number` that takes in as arguments two strings and returns one integer. The first string passed to the function contains a word to be converted to an integer; the second string is the user’s guess which should be used as a key to convert a word (the first string) to its integer equivalent. For example, if the word is `RUE` and the user’s guess is `TAKEOURSIM`, the integer equivalent of `RUE` is `653`.
+```
+  TAKEOURSIM
+  ----------
+  0123456789
+```
+
+5. Create a function named `make_numbers` that takes in two arguments, both of which are strings, and returns a tuple of four integers. The first string passed to the function is the puzzle string; the second string is the user’s guess. Your `make_numbers` function should call your `make_number` function four times to create the four integers, and then should return a tuple of those four values that are the equivalent integers of the words representing the dividend, quotient, divisor, and remainder (in that order). For the puzzle example shown above and the user guess `TAKEOURSIM`, your function should return `(659467, 653, 316, 571)`.
+
+6. Create a function named `main` that does not take in any arguments nor return any values. This function should take as input from the user a puzzle string, print the puzzle, ask the user to enter a guess, and output an appropriate message. **Do not ask the user to enter a second guess.** Your `main` function should call your `get_valid_letters`, `is_valid_guess`, `make_numbers`, and `check_user_guess` functions, as well as the provided `print_puzzle` function. Format your output as shown below.
+
+7. Finally, in your main code type the following:
+```python
+if __name__ == "__main__":
+    main()
+```
+You should **NOT** include any other executable lines in your main code.
+
+Example beginning output for ALL cases (using input `RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA` for the puzzle string):
+```
+Enter a word arithmetic puzzle: 
+RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA
+
+             RUE
+         _______
+    EAR | RUMORS
+          UEII  
+          ------
+           UKTR 
+            EAR 
+            ----
+            KEOS
+            KAIK
+            ----
+             USA
+```
+
+Example output (using the same puzzle string as above and `TAKEOURSIM` for the user’s guess (**valid and wrong**)):
+```
+<output from above>
+
+Enter your guess, for example ABCDEFGHIJ: TAKEOURSIM 
+Try again! 
+```
+
+Example output (using the same puzzle string as above and `TAKEOUR` for the user’s guess (**invalid**)):
+```
+<output from above>
+
+Enter your guess, for example ABCDEFGHIJ: TAKEOUR 
+Your guess should contain exactly 10 unique letters used in the puzzle. 
+```
+
+Example output (using the same puzzle string as above and a **valid and correct** user’s guess):
+```
+<output from above>
+
+Enter your guess, for example ABCDEFGHIJ: <correct guess> 
+Good job! 
+```
+
+**Hint:** You may find it easier to hardcode a puzzle string when testing your code. When you have debugged your code, replace the puzzle string with an input statement.
+
+
 
 ## Frequently Asked Questions
 1. **Do I have to actually solve the word-math puzzles?** No! Unless you want to for fun, of course! The code you are writing will check a guess from the user, it won't solve the puzzles.
@@ -69,7 +144,7 @@ YOU IMPORTED apple.py!!!
 blueberry pie ftw
 name of this file: __main__
 ```
-Cool, huh? Also, you absolutely don't need to know this for this class and you will not be tested over it.
+Cool, huh? Also, **you absolutely don't need to know this for this class and you will not be tested over it**. But if you're interested, [Runestone Academy also has an explanation](https://runestone.academy/ns/books/published/ENGR_102_OER/Functions/mainfunction.html).
 
 Have a question you don't see here? Email your instructor!
 
