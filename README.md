@@ -59,7 +59,7 @@ if __name__ == "__main__":
 ```
 You should **NOT** include any other executable lines in your main code.
 
-Example beginning output for ALL cases (using input `RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA` for the puzzle string):
+Example beginning output for **ALL cases** (using input `RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA` for the puzzle string):
 ```
 Enter a word arithmetic puzzle: 
 RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA
@@ -78,7 +78,7 @@ RUE,EAR | RUMORS,UEII  ,UKTR ,EAR ,KEOS,KAIK,USA
              USA
 ```
 
-Example output (using the same puzzle string as above and `TAKEOURSIM` for the user’s guess (**valid and wrong**)):
+Example output (using the same puzzle string as above and `TAKEOURSIM` for the (**valid and wrong**) user's guess):
 ```
 <output from above>
 
@@ -86,7 +86,7 @@ Enter your guess, for example ABCDEFGHIJ: TAKEOURSIM
 Try again! 
 ```
 
-Example output (using the same puzzle string as above and `TAKEOUR` for the user’s guess (**invalid**)):
+Example output (using the same puzzle string as above and `TAKEOUR` for the (**invalid**) user's guess):
 ```
 <output from above>
 
@@ -94,13 +94,15 @@ Enter your guess, for example ABCDEFGHIJ: TAKEOUR
 Your guess should contain exactly 10 unique letters used in the puzzle. 
 ```
 
-Example output (using the same puzzle string as above and a **valid and correct** user’s guess):
+Example output (using the same puzzle string as above and a **valid and correct** user's guess):
 ```
 <output from above>
 
 Enter your guess, for example ABCDEFGHIJ: <correct guess> 
 Good job! 
 ```
+
+**Note:** Your code should only take a single guess. It should *not* ask the user to enter a second guess.
 
 **Hint:** You may find it easier to hardcode a puzzle string when testing your code. When you have debugged your code, replace the puzzle string with an input statement.
 
